@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>My Hero</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <Header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid bg-black">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/img/favicon.ico" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    SuperHero
+                </a>
+            </div>
+        </nav>
+    </Header>
+
+    <!-- Buscador de Heroes -->
+    <div id="buscador" class="row p-3">
+        <div class="col-sm-3 col-md-3 col-lg-4">
+            
+        </div>
+        <div class="card col-sm-6 col-md-6 col-lg-4" style="width: 25rem;">
+            <img src="/assets/img/sh1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Encuentra tu SuperHero</h5>
+                <p class="card-text">Ingresa el número del SuperHero a buscar</p>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <a href="#" class="btn btn-primary" id="btnBuscar">Buscar</a>
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-3 col-lg-4">
+            
+        </div>
+    </div>
+    <!-- Heroe encontrado -->
+    <div class="row p-3 p-3 ml-3"> 
+        <!-- Descripción del heroe -->
+        <div id=descHeroe class="card col-sm-6 col-md-6 col-lg-6" style="max-width: 540px; display: none;"> 
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img id="imgMyHero"  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 id="txtTitle"class="card-title">Card title</h5>
+                  <p id="txtConn" class="card-text">Nop.</p>
+                  
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- estadisticas del heroe -->
+        <div id="chartContainer" class="p-2 col-sm-4 col-md-4 col-lg-4"></div>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="/assets/js/CanvasJs.js"></script>
+</body>
+
+</html>

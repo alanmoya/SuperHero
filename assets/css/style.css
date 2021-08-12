@@ -1,0 +1,10 @@
+.navbar-brand{
+    color: white!important;
+}
+*{
+    font-size: x-small;
+}
+
+#chartContainer{
+    height: 300px!important;
+}
